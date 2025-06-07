@@ -13,8 +13,8 @@ logger = get_logger(__name__)
 #    Mapeamos el nombre de la dimensión a la función de procesamiento específica.
 # --------------------------------------------------------------------------------
 PROCESSING_TASKS = [
-    #{"name": "customers", "processor_func": customers_processor.process},
-    #{"name": "users", "processor_func": employees_processor.process},
+    {"name": "customers", "processor_func": customers_processor.process},
+    {"name": "users", "processor_func": employees_processor.process},
     {"name": "tables", "processor_func": tables_processor.process}
     ]
 
